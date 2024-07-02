@@ -10,8 +10,8 @@
   <style>
     .custom-background {
       background-size: cover;
-      width: 1273px;
-      height: 881px;
+      width: 1003px; /* Fixed width */
+      height: 100vh; /* Full height of the viewport */
     }
   </style>
 </head>
@@ -19,12 +19,16 @@
 
   <div class="flex min-h-screen">
     <!-- Carousel Section -->
-    <div class="hidden md:flex items-center justify-center bg-gray-200 custom-background" style="background-image: url('image.png');">
-      <!-- Carousel Content Here -->
+    <div class="hidden md:flex items-center justify-center custom-background" style="background-image: url('https://via.placeholder.com/1273x881');">
+      <div class="p-8 text-white text-center">
+        <h1 class="text-4xl font-bold mb-4">Heading Of The Login Page And It Is The Demo Heading</h1>
+        <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt, vero laborum asperiores laboriosam blanditiis esse harum expedita voluptatum, facere quam eos, libero dolorum deleniti molestias architecto excepturi optio aliquid?</p>
+        <a href="#" class="text-blue-400 underline">Learn more →</a>
+      </div>
     </div>
 
     <!-- Login Form Section -->
-    <div class="flex flex-col md:w-1/2 items-center justify-center p-8">
+    <div class="flex flex-col md:w-1/2 items-center justify-center p-8 bg-white">
       <h2 class="text-2xl font-semibold mb-6">Log in to your account</h2>
       <form class="w-full max-w-sm">
         <div class="mb-4">
