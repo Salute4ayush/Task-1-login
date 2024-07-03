@@ -5,23 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.0.0-alpha.24/dist/material.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@mui/material@5.0.0-alpha.24/dist/material.umd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <style>
-    .custom-background {
-      background-size: cover;
-      width: 100%; /* Ensures the background image covers the full width */
-      height: 100vh; /* Ensures the background image covers the full height of the viewport */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .owl-carousel .owl-item img {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .carousel-item {
+      position: relative;
+      height: 83vh;
+    }
+    .carousel-item-content {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: black;
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .carousel-item h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body class="bg-gray-100">
 
-  <div class="flex min-h-screen">
-    <!-- Login Form Section -->
-    <div class="flex flex-col md:w-1/2 items-center justify-center p-8 bg-white">
+<div class="flex flex-col md:flex-row min-h-screen items-stretch justify-center">
+
+  <!-- Login Form Section (30% width on large screens, full width on small screens) -->
+  <div class="md:w-1/3 bg-white p-8 flex items-center justify-center">
+    <div class="max-w-sm w-full">
       <h2 class="text-2xl font-semibold mb-6">Log in to your account</h2>
-      <form class="w-full max-w-sm">
+      <form>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Enter Email Address</label>
           <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
@@ -34,26 +62,67 @@
           <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">Forgot Password?</a>
         </div>
         <div>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Login</button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">Login</button>
         </div>
         <div class="mt-4">
           <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">Create a new account?</a>
         </div>
       </form>
     </div>
+  </div>
 
-    <!-- Carousel Section -->
-    <div class="hidden md:flex items-start justify-center custom-background" style="background-image: url('./image.png');">
-      <div class="p-8 text-center mt-4">
-        <h1 class="text-4xl font-bold mb-4 text-black">Heading Of The Login Page And It Is The Demo Heading</h1>
-        <p class="mb-6 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt, vero laborum asperiores laboriosam blanditiis esse harum expedita voluptatum, facere quam eos, libero dolorum deleniti molestias architecto excepturi optio aliquid?</p>
-        <a href="#" class="text-blue-400 underline">Learn more →</a>
+  <!-- Carousel Section (70% width on large screens, hidden on small screens) -->
+  <div class="md:w-2/3 hidden md:block bg-white p-10">
+    <div class="text-black h-full">
+      <div id="carousel" class="features owl-theme owl-carousel h-full">
+        <div class="carousel-item">
+          <div class="carousel-item-content">
+            <h1 class="text-2xl font-bold">Heading Of The Login Page And It Is The Demo Heading</h1>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt, vero laborum asperiores laboriosam blanditiis esse harum expedita voluptatum, facere quam eos, libero dolorum deleniti molestias architecto excepturi optio aliquid?</p>
+            <a href="#" class="text-blue-500 underline">Learn more →</a>
+          </div>
+          <img src="./image1.png" alt="Image 1" />
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-content">
+            <h1 class="text-2xl font-bold">Heading Of The Login Page And It Is The Demo Heading</h1>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt, vero laborum asperiores laboriosam blanditiis esse harum expedita voluptatum, facere quam eos, libero dolorum deleniti molestias architecto excepturi optio aliquid?</p>
+            <a href="#" class="text-blue-500 underline">Learn more →</a>
+          </div>
+          <img src="./m3.jpg" alt="Image 2" />
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item-content">
+            <h1 class="text-2xl font-bold">Heading Of The Login Page And It Is The Demo Heading</h1>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error incidunt, vero laborum asperiores laboriosam blanditiis esse harum expedita voluptatum, facere quam eos, libero dolorum deleniti molestias architecto excepturi optio aliquid?</p>
+            <a href="#" class="text-blue-500 underline">Learn more →</a>
+          </div>
+          <img src="./m4.jpg" alt="Image 3" />
+        </div>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('#carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      autoplay: true, // Enable autoplay
+      autoplayTimeout: 2000, // Set autoplay interval to 2 seconds
+      responsive: {
+        0: {
+          items: 1
+        }
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
