@@ -39,6 +39,16 @@
       font-weight: 700;
       margin-bottom: 1rem;
     }
+    @media (min-width: 768px) {
+      .carousel-section {
+        display: block;
+      }
+    }
+    @media (max-width: 767px) {
+      .carousel-section {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -72,7 +82,7 @@
   </div>
 
   <!-- Carousel Section (70% width on large screens, hidden on small screens) -->
-  <div class="md:w-2/3 hidden md:block bg-white p-10">
+  <div class="md:w-2/3 carousel-section bg-white p-10">
     <div class="text-black h-full">
       <div id="carousel" class="features owl-theme owl-carousel h-full">
         <div class="carousel-item">
