@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .element{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+        .pt{
+            padding: 10px;
+            width: 50px;
+            border-radius: 50%;
+            height: 50px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./img/im.png" alt="Company Logo" class="h-8 mr-3">
+                <h1 class="text-xl font-bold">Dashboard</h1>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                        </svg>
+                </button>
+                <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                    <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 9h18M3 15h18M3 21h18"></path>
+                    </svg> -->
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 26 26">
+                        <path d="M 13 0 C 12.398438 0 12 0.398438 12 1 L 12 2.09375 C 9.167969 2.570313 7 5.035156 7 8 L 7 13 C 7 13.800781 2 17.800781 2 19 C 2 20.699219 6.398438 22 13 22 C 19.601563 22 24 20.699219 24 19 C 24 17.800781 19 13.800781 19 13 L 19 8 C 19 5.035156 16.832031 2.570313 14 2.09375 L 14 1 C 14 0.398438 13.601563 0 13 0 Z M 11.3125 23.09375 C 11.113281 23.394531 11 23.601563 11 24 C 11 25.101563 11.898438 26 13 26 C 14.101563 26 15 25.101563 15 24 C 15 23.601563 14.886719 23.394531 14.6875 23.09375 Z"></path>
+                        </svg>
+                </button>
+                <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                    <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" src="./img/moon.png">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A1.978 1.978 0 0118 14.6V11a7.003 7.003 0 00-5-6.707V3a2 2 0 10-4 0v1.293A7.003 7.003 0 004 11v3.6c0 .538-.214 1.055-.595 1.445L2 17h5m0 0v1a3 3 0 006 0v-1m-6 0h6"></path>
+                    </svg> -->
+                    <img src="./img/moon.png" alt="mode">
+                </button>
+                <button class="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+                    <!-- <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A1.5 1.5 0 016 16.5h12a1.5 1.5 0 01.879 2.804l-6 3.5a1.5 1.5 0 01-1.758 0l-6-3.5z"></path>
+                    </svg> -->
+                    <img src="./img/user.png" alt="profile">
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto p-6">
+        <div class="flex items-center justify-between mb-6 element">
+            <h1 class="text-2xl font-bold">Hii, Test User1</h1>
+            <p>Hey, Here are your all systems.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class=" flex items-center justify-between p-4 rounded-lg shadow bg-white">
+                <span><img src="./img/image1.png" alt="f" class="shadow pt bg-gray-200"></span>
+                <p class="font-semibold">Total System(s)</p>
+                <button class="text-2xl pt bg-transparent shadow">04</button>
+            </div>
+            <div class=" flex items-center justify-between p-4 rounded-lg shadow bg-white">
+                <span><img src="./img/image2.png" alt="f" class="shadow pt bg-gray-200"></span>
+                <p class="font-semibold">System(s) Online</p>
+                <button class="text-2xl pt bg-transparent shadow">01</button>
+            </div>
+            <div class=" flex items-center justify-between p-4 rounded-lg shadow bg-white">
+                <span><img src="./img/image3.png" alt="f" class="shadow pt bg-gray-200"></span>
+                <p class="font-semibold">System(s) Offline</p>
+                <button class="text-2xl pt bg-transparent shadow">03</button>
+            </div>
+            <div class=" flex items-center justify-between p-4 rounded-lg shadow bg-white">
+                <span><img src="./img/image4.png" alt="f" class="shadow pt bg-gray-200"></span>
+                <p class="font-semibold">System(s) Unknown</p>
+                <button class="text-2xl pt bg-transparent shadow">00</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4 bg-gray-300 h-14 p-4 rounded-lg">
+                    <div>
+                        <h2 class="font-bold">OEE System</h2>
+                        <p>UK</p>
+                    </div>
+                    <span class="text-black-500 font-bold">⋮</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Flow Rate: </p><span class="font-semibold">NA m3/hr</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Tank Temperature: </p><span class="font-semibold">NA °C</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Motor Current: </p><span class="font-semibold">NA A</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Motor Voltage: </p><span class="font-semibold">NA V</span>
+                </div>
+                <p class="text-black-500 text-sm mt-4">Last updated: NA</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4 bg-gray-300 h-14 p-4 rounded-lg">
+                    <div>
+                        <h2 class="font-bold">PLC-1D-04J</h2>
+                        <p>Singapore</p>
+                    </div>
+                    <span class="text-black-500 font-bold">⋮</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Flow Rate: </p><span class="font-semibold">27 m3/hr</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Tank Temperature: </p><span class="font-semibold">62 °C</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Motor Current: </p><span class="font-semibold">7 A</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Motor Voltage: </p><span class="font-semibold">215 V</span>
+                </div>
+                <p class="text-black-500 text-sm mt-4">Last updated: 2024-07-04 13:54</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4 bg-gray-300 h-14 p-4 rounded-lg">
+                    <div>
+                        <h2 class="font-bold">Clean Room Monitoring</h2>
+                        <p>Pune</p>
+                    </div>
+                    <span class="text-black-500 font-bold">⋮</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Humidity: </p><span class="font-semibold">NA %Rh</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Temperature: </p><span class="font-semibold">NA °C</span>
+                </div>
+                <p class="text-black-500 text-sm mt-4">Last updated: NA</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4 bg-gray-300 h-14 p-4 rounded-lg">
+                    <div>
+                        <h2 class="font-bold">Test</h2>
+                        <p>Pune</p>
+                    </div>
+                    <span class="text-black-500 font-bold">⋮</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Test1:</p><span class="font-semibold">NA °C</span>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p>Test2:</p><span class="font-semibold">NA %</span>
+                </div>
+                <p class="text-black-500 text-sm mt-4">Last updated: NA</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4 bg-gray-300 h-14 p-4 rounded-lg">
+                    <div>
+                        <h2 class="font-bold">Test Tank System</h2>
+                        <p>Pune</p>
+                    </div>
+                    <span class="text-black-500 font-bold">⋮</span>
+                </div>
+                <p>Device is not configured yet!</p>
+                <p class="text-black-500 text-sm mt-4">Last updated: NA</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
